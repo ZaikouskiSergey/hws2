@@ -48,6 +48,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                     />
                     <div id={'hw3-error'} className={s.error}>
                         {error}
+                        
                     </div>
                 </div>
 
