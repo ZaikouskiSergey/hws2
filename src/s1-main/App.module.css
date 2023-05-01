@@ -1,9 +1,10 @@
 .App {
     --header_height: 60px;
     width: 1280px;
-    padding: 131px 70px 10px 70px;
+    height: auto;
+    padding: 0px 70px 10px 70px;
     background-color: white;
-    border: 1px solid antiquewhite;
+    //border: 1px solid antiquewhite;
 }
 
 .hw {
