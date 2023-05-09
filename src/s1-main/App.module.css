@@ -18,15 +18,13 @@
 
 .hwTitle {
     padding-top: 20px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
     /* identical to box height */
     color: #000000;
-    pagging-top:131px;
-    pagging-bottom:10px;
     margin-bottom: 24px;
 
 }
