@@ -1,2 +1,11 @@
 .container {
+    display:flex;
+
+}
+.super_radio{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 5px;
 }
