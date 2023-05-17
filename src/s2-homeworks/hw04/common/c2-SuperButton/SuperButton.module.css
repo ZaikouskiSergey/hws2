@@ -17,7 +17,7 @@
 }
 
 .secondary {
-    width: 176px;
+    width: 132px;
     height: 30px;
     color: #0066CC;
     background: #FFFFFF;
@@ -39,7 +39,7 @@
 }
 
 .default:hover {
-    width: 167px;
+    width: 132px;
     height: 30px;
     background: #0080FF;
     border: 1px solid #0080FF;
@@ -48,14 +48,14 @@
 }
 
 .red:hover {
-    width: 167px;
+    width: 132px;
     height: 30px;
     background: #FF1A47;;
     border: 1px solid #FF1A47;
 }
 
 .secondary:hover {
-    width: 167px;
+    width: 132px;
     height: 30px;
     background: #E5F0FA;
     border: 1px solid #0066CC;
@@ -65,14 +65,14 @@
 
 
 .default:active {
-    width: 149px;
+    width: 132px;
     height: 30px;
     background: #0059B3;
 
 }
 
 .secondary:active {
-    width: 149px;
+    width:132px;
     height: 30px;
     background: #C9E5FF;
     border: 1px solid #0066CC;
@@ -81,7 +81,7 @@
 }
 
 .red:active {
-    width: 149px;
+    width: 132px;
     height: 30px;
     background: #B31232;
 
