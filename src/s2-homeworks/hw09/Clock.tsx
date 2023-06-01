@@ -32,7 +32,7 @@ function Clock() {
         setShow(true)
     }
     const onMouseLeave = () => { // пишут студенты // спрятать дату если мышка не наведена
-        setShow(false)
+        setShow(true)
     }
     const dayFormatter = new Intl.DateTimeFormat("en", {
         weekday: "long",
@@ -69,7 +69,7 @@ function Clock() {
                 <div className={s.more}>
                     {show ? (
                         <>
-                            <span id={'hw9-month'}>{stringMonth}</span>,{' '}
+                            <span id={'hw9-month'}>{stringMonth}</span>, {' '}
                             <span id={'hw9-date'}>{stringDate}</span>
                         </>
                     ) : (

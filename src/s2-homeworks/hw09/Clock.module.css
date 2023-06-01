@@ -32,6 +32,8 @@
 
 .more {
     display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
 
     font-family: 'Montserrat';
     font-style: normal;
