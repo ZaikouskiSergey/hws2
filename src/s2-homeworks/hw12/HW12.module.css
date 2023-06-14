@@ -18,7 +18,13 @@ html {
     color: var(--color);
 }
 
-.select {
+/*#hw12 {
+    border: 2px solid #B31232;
     background-color: #00cc22;
+}*/
+
+.select {
+    background-color: var(--background);
+
 
 }

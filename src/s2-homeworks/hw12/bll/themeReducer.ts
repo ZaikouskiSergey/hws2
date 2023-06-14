@@ -1,10 +1,11 @@
 
-type InitialStateType={
+export type InitialStateType={
     themeId: number
 }
 const initState = {
     themeId: 1,
 }
+
 
 export const themeReducer = (state:InitialStateType = initState, action: ChangeThemeIdType): InitialStateType => { // fix any
     switch (action.type) {
