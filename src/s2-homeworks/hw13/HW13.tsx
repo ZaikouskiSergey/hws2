@@ -24,7 +24,7 @@ const HW13 = () => {
         const url =
             x === null
                 ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
-                : 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test'
+                : 'https://samurai.it-incubator.io/api/3.0/homework/test'
 
         setCode('')
         setImage('')
@@ -37,10 +37,38 @@ const HW13 = () => {
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
+                setText("...всё ок) \n код 200 - обычно означает что скорее всего всё ок)")
+                setInfo('')
+
 
             })
-            .catch((e) => {
+            .catch((rej) => {
                 // дописать
+                switch(x){
+                    case false:{
+                        setCode('Ошибка 400!')
+                        setImage(error400)
+                        setText("Ты не отправил success в body вообще!\nошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!")
+                        setInfo('')
+                        break
+                    }
+                    case undefined: {
+                        setCode('Ошибка 500!')
+                        setImage(error500)
+                        setText("эмитация ошибки на сервере\nошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)")
+                        setInfo('')
+                        break
+                    }
+                    case null: {
+                        setCode('Error!')
+                        setImage(errorUnknown)
+                        setText("Network Error\nAxiosError")
+                        setInfo('')
+                        break
+
+                    }
+                }
+
 
             })
     }
