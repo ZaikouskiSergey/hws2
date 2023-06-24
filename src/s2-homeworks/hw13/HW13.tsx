@@ -65,11 +65,8 @@ const HW13 = () => {
                         setText("Network Error\nAxiosError")
                         setInfo('')
                         break
-
                     }
                 }
-
-
             })
     }
 
@@ -84,6 +81,7 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
+                        disabled={info!==''}
 
                     >
                         Send true
@@ -93,6 +91,7 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         // дописать
+                        disabled={info!==''}
 
                     >
                         Send false
@@ -102,6 +101,7 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         // дописать
+                        disabled={info!==''}
 
                     >
                         Send undefined
@@ -111,6 +111,7 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         // дописать
+                        disabled={info!==''}
 
                     >
                         Send null
